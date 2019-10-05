@@ -29,6 +29,7 @@ const App = () => {
         {products.map(product => 
           <Column size={3}>
           <Card textAlign="centered">
+            <img src={`data/products/${product.sku}_1.jpg`}/>
             <li key={product.sku}>{product.title}</li> 
           </Card>
           </Column>)}
